@@ -163,7 +163,7 @@ const JumpForm = (props) => {
         </div>
 
       ) : (null)}
-      <div style={{ margin: "1rem" }}>
+      <div style={{ margin: "1rem", textShadow:"1px 1px 1px #000000" }}>
         <div class="row">
           <div class="searched-chart">
             <table class="table table-bordered">

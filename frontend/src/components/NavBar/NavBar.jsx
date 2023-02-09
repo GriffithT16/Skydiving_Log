@@ -14,20 +14,20 @@ const Navbar = () => {
           className="justify-content-around"
           style={{ justifyContent: "space-between", alignItems: "end"}}>        
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            <b>Skydive Tracker    </b>
+            <b>Skydive Tracker ||  </b>
           </Link>
           <Link to="/log" style={{ textDecoration: "none", color: "navy" }}>
-            <b>View Jumps    </b>
+            <b>View Jumps ||   </b>
           </Link>
           <Link to="/jumps" style={{ textDecoration: "none", color: "white" }}>
-            <b>Log New Jump    </b>
+            <b>Log New Jump ||  </b>
           </Link>
           <Link
             to="/weather" style={{ textDecoration: "none", color: "darkblue" }}>                      
-            <b>View Weather    </b>
+            <b>View Weather ||  </b>
           </Link>
           <Link to="/map" style={{ textDecoration: "none", color: "white" }}>
-            <b>DZ's Nearby    </b>
+            <b>DZ's Nearby ||  </b>
           </Link>
           <Link
             to="/directions" style={{ textDecoration: "none", color: "navy" }}>       

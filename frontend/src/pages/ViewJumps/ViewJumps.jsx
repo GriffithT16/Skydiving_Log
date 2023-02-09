@@ -25,7 +25,7 @@ const ViewJumps = (props) => {
   return (  
         <div className="background-img">
         <h1 className="font-link title" style={{marginLeft: "7em"}}>{user.username}'s Logged Jumps</h1>
-        <div className="searched-chart" style={{margin: "1rem", marginBottom: "0rem"}}>
+        <div className="searched-chart" style={{margin: "1rem", marginBottom: "0rem", textShadow:"1px 1px 1px #000000"}}>
           <table className="table table-striped" style={{marginBottom: "2rem"}}>
             <thead>
               <tr>

@@ -32,7 +32,7 @@ const HomePage = () => {
   return (
     <div className="background-img2">
       <div className="container">
-        <h1 style={{color:"navy"}}>{user.username}'s Skydiving Log!</h1>
+        <h1 style={{color:"navy"}}>{user.username}'s Skydive Tracker</h1>
         {jumps && jumps.map((jump) => <p key={jump.id} style={{color:"navy"}}>{jump.year}</p>)}
       </div>
     </div>

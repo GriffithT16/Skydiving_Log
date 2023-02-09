@@ -1,0 +1,6 @@
+.background-img{
+    background-image: url('../bottom-view-sky-with-clouds.jpg');
+    background-repeat: repeat;  
+    background-position: center;
+    background-size: cover;
+  }

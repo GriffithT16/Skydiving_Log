@@ -43,7 +43,7 @@ function App() {
   const [lngE, setLngE] = useState(5);
 
   useEffect(() => {
-    console.log("API KEY", process.env.REACT_APP_API_KEY);
+  //  ! console.log("API KEY", process.env.REACT_APP_API_KEY);
     getLocation();
     fetchLocations();
   }, []);
@@ -51,6 +51,7 @@ function App() {
   function getLocation() {
     if (!navigator.geolocation) {
       setStatus("Geolocation is not supported by your browser");
+      console.log("status", status)
     } else {
       setStatus("Locating...");
       navigator.geolocation.getCurrentPosition(fetchWeather);
@@ -143,33 +144,4 @@ function App() {
 
 export default App;
 
-// const [lat, setLat] = useState(null);
-// const [lng, setLng] = useState(null);
-// const [status, setStatus] = useState(null);
 
-// const getLocation = () => {
-//   if (!navigator.geolocation) {
-//     setStatus("Geolocation is not supported by your browser");
-//   } else {
-//     setStatus("Locating...");
-//     navigator.geolocation.getCurrentPosition(
-//       (position) => {
-//         setStatus(null);
-//         setLat(position.coords.latitude);
-//         setLng(position.coords.longitude);
-//       },
-//       () => {
-//         setStatus("Unable to retrieve your location");
-//       }
-//     );
-//   }
-//   return (
-//     <div>
-//       <button onClick={getLocation}>Get Location</button>
-//       <h1>Coordinates</h1>
-//       <p>{status}</p>
-//       {lat && <p>Latitude: {lat}</p>}
-//       {lng && <p>Longitude: {lng}</p>}
-//     </div>
-//   )
-// };

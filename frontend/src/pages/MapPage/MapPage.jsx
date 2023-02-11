@@ -14,11 +14,15 @@ const containerStyle = {
   height: "590px",
 };
 
+
+
 function MapPage(props) {
   const center = {
     lat: props.lat,
     lng: props.lng,
   };
+
+
 
   const onLoadMarker = (marker) => {};
 
@@ -116,7 +120,7 @@ function MapPage(props) {
   }
 
   return isLoaded ? (
-    <div className="background">
+    <div className="backgroun">
       <div
         style={{
           left: "50%",

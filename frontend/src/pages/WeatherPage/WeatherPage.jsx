@@ -87,7 +87,7 @@ const WeatherPage = (props) => {
   return (
     <div className="background-img">
       <h1 className="font-link title">Current Weather</h1>
-      <div className="searched-chart">
+      <div className="searched-chart" >
         <table className="table table-striped">
           <thead>
             <tr>
@@ -99,7 +99,7 @@ const WeatherPage = (props) => {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style={{textShadow:"1px 1px 1px #000000"}}>
               <td>{weather.temperature}</td>
               <td>{weather.time}</td>
               <td>{weathercode}</td>
@@ -125,7 +125,7 @@ const WeatherPage = (props) => {
             </tr>
           </thead>          
           <tbody>          
-            <tr>                
+            <tr style={{textShadow:"1px 1px 1px #000000"}}>                
               <td>{forecast.daily?.precipitation_sum[0]} in.</td>
               <td>{forecast.daily?.sunrise[0]}/{forecast.daily?.sunset[0]}</td>
               <td>{forecast.daily?.temperature_2m_max[0]}</td>
@@ -148,7 +148,7 @@ const WeatherPage = (props) => {
             </tr>
           </thead>          
           <tbody>
-            <tr>
+            <tr style={{textShadow:"1px 1px 1px #000000"}}>
               <td>{forecast.daily?.precipitation_sum[1]} in.</td>
               <td>{forecast.daily?.sunrise[1]}/{forecast.daily?.sunset[1]}</td>
               <td>{forecast.daily?.temperature_2m_max[1]}</td>
@@ -171,7 +171,7 @@ const WeatherPage = (props) => {
             </tr>
           </thead>          
           <tbody>
-            <tr>
+            <tr style={{textShadow:"1px 1px 1px #000000"}}>
               <td>{forecast.daily?.precipitation_sum[2]} in.</td>
               <td>{forecast.daily?.sunrise[2]}/{forecast.daily?.sunset[2]}</td>
               <td>{forecast.daily?.temperature_2m_max[2]}</td>
@@ -194,7 +194,7 @@ const WeatherPage = (props) => {
             </tr>
           </thead>          
           <tbody>
-            <tr>
+            <tr style={{textShadow:"1px 1px 1px #000000"}}>
               <td>{forecast.daily?.precipitation_sum[3]} in.</td>
               <td>{forecast.daily?.sunrise[3]}/{forecast.daily?.sunset[3]}</td>
               <td>{forecast.daily?.temperature_2m_max[3]}</td>
@@ -217,7 +217,7 @@ const WeatherPage = (props) => {
             </tr>
           </thead>          
           <tbody>
-            <tr>
+            <tr style={{textShadow:"1px 1px 1px #000000"}}>
               <td>{forecast.daily?.precipitation_sum[4]} in.</td>
               <td>{forecast.daily?.sunrise[4]}/{forecast.daily?.sunset[4]}</td>
               <td>{forecast.daily?.temperature_2m_max[4]}</td>
@@ -240,7 +240,7 @@ const WeatherPage = (props) => {
             </tr>
           </thead>          
           <tbody>
-            <tr>
+            <tr style={{textShadow:"1px 1px 1px #000000"}}>
               <td>{forecast.daily?.precipitation_sum[5]} in.</td>
               <td>{forecast.daily?.sunrise[5]}/{forecast.daily?.sunset[5]}</td>
               <td>{forecast.daily?.temperature_2m_max[5]}</td>
@@ -263,7 +263,7 @@ const WeatherPage = (props) => {
             </tr>
           </thead>          
           <tbody>
-            <tr>
+            <tr style={{textShadow:"1px 1px 1px #000000"}}>
               <td>{forecast.daily?.precipitation_sum[6]} in.</td>
               <td>{forecast.daily?.sunrise[6]}/{forecast.daily?.sunset[6]}</td>
               <td>{forecast.daily?.temperature_2m_max[6]}</td>

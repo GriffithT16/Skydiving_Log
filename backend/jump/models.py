@@ -13,3 +13,4 @@ class Jump(models.Model):
     freefall = models.IntegerField()
     description = models.CharField(max_length=500)
     weather = models.CharField(max_length=100)
+    picture = models.ImageField(upload_to='<int:pk>/', default='backend\jump\kamil-pietrzak-AlA8S9tALAs-unsplash.jpg')

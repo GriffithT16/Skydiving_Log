@@ -153,23 +153,28 @@ const JumpForm = (props) => {
       </form>
       {editId ? (
         <div>
-        <JumpEditForm
-          editId={editId}
-          setIdOfEdit={setIdOfEdit}
-          fetchJumps={fetchJumps}
-          elementToEdit={editId}
-        ></JumpEditForm>        
-        <button className="btn btn-dark" style={{marginLeft: "1rem"}} onClick={()=>setIdOfEdit(null)}>Close</button>
+          <JumpEditForm
+            editId={editId}
+            setIdOfEdit={setIdOfEdit}
+            fetchJumps={fetchJumps}
+            elementToEdit={editId}
+          ></JumpEditForm>
+          <button
+            className="btn btn-dark"
+            style={{ marginLeft: "1rem" }}
+            onClick={() => setIdOfEdit(null)}
+          >
+            Close
+          </button>
         </div>
-
-      ) : (null)}
-      <div style={{ margin: "1rem", textShadow:"1px 1px 1px #000000" }}>
+      ) : null}
+      <div style={{ margin: "1rem", textShadow: "1px 1px 1px #000000" }}>
         <div class="row">
           <div class="searched-chart">
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th className="font-link">Jump Number</th>
+                  <th className="font-link">Jump #</th>
                   <th className="font-link">Date</th>
                   <th className="font-link">DropZone</th>
                   <th className="font-link">Aircraft</th>
@@ -207,11 +212,19 @@ const JumpForm = (props) => {
                           </button>
                           <button
                             type="button"
-                            style={{marginLeft: ".5rem"}}
+                            style={{ marginLeft: ".5rem" }}
                             class="btn btn-danger"
                             onClick={() => handleDelete(el.id)}
                           >
                             <i class="far fa-trash-alt">Delete</i>
+                          </button>
+                          <button
+                            type="button"
+                            style={{ marginLeft: ".5rem" }}
+                            className="btn btn-info"
+                            onClick={() => setIdOfEdit(el)}
+                          >
+                            <i className="fas fa-edit">+</i>
                           </button>
                         </td>
                       </tr>
